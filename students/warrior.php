@@ -27,6 +27,8 @@ abstract class Warrior extends distantWarrior {
   {
     $this->weapon = $myWeapon;
     $this->life = INF;
+    $this->shield = INF;
+    $this->speed = INF;
   }
   public function getWeapon () {
       return $this->weapon;

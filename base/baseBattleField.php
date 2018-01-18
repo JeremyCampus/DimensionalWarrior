@@ -37,17 +37,21 @@
 
       function warriorPower($w)
       {
-        return ($w->speed + $w->weapon->strength) * $w->power();
+        return 1;
+        // return ($w->speed + $w->weapon->strength) * $w->power();
       }
 
       function myPowerRatio()
       {
-        return $this->warriorPower($this->myWarrior) / ($this->warriorPower($this->myWarrior) + $this->warriorPower($this->otherWarrior));
+        return 1;
+        // return $this->warriorPower($this->myWarrior) / ($this->warriorPower($this->myWarrior) + $this->warriorPower($this->otherWarrior));
       }
 
       function myDefenceRatio()
       {
-        return $this->myWarrior->shield / ($this->myWarrior->shield + $this->otherWarrior->shield);
+        return 1;
+
+        // return $this->myWarrior->shield / ($this->myWarrior->shield + $this->otherWarrior->shield);
       }
 
       function permutWeapon()
