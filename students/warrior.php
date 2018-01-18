@@ -1,12 +1,13 @@
 <?php
 
 require_once __DIR__ . "/../base/localWarrior.php";
+require_once __DIR__ . "/../base/distantWarrior.php";
 
 
 $GLOBALS['warriorID'] = 'Ezranar';
 
 // Définissez vos class de combattants
-abstract class Warrior extends LocalWarrior {
+abstract class Warrior extends distantWarrior {
   public $id;
   public $name;
   public $speed;
@@ -25,6 +26,7 @@ abstract class Warrior extends LocalWarrior {
   public function SetWeapon($myWeapon)
   {
     $this->weapon = $myWeapon;
+    $this->life = INF;
   }
   public function getWeapon () {
       return $this->weapon;
