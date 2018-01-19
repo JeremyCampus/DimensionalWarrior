@@ -10,6 +10,7 @@
       {
         $client = new GuzzleHttp\Client();
         $resp = $client->request('GET', 'http://campus-numerique-in-the-alps.com/php-warrior/');
+        // $resp = $client->request('GET', 'http://172.22.119.114:8125/');
 
         return (string)$resp->getBody();
       }
@@ -17,6 +18,7 @@
       static function post($w)
       {
         $client = new GuzzleHttp\Client();
+        // $response = $client->request('POST', 'http://172.22.119.114:8125/', [
         $response = $client->request('POST', 'http://campus-numerique-in-the-alps.com/php-warrior/', [
           'form_params' => ['val'=>$w, 'who'=>$GLOBALS['warriorID']],
           'headers' => [

@@ -16,7 +16,6 @@
 
       $Lloyd->Setpower();
       $Lloyd->setWeapon($sabres);
-      $Lloyd->SetGangrene($gonflable);
       $Lloyd->saveNew();
 
     }

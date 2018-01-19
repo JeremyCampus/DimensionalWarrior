@@ -36,9 +36,11 @@ abstract class Warrior extends distantWarrior {
   {
     $this->machin = $myGangrene;
   }
+
   public function getWeapon () {
       return $this->weapon;
   }
+
   public function getGangrene () {
       return $this->machin;
   }

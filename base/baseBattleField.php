@@ -60,14 +60,14 @@
         // $this->myWarrior->weapon = $this->otherWarrior->weapon;
         // $this->otherWarrior->weapon = $we;
 
-        $gonflable = new weapon ("NoobPOWER",1);
-        $gonflable->SetImageUrl("http://www.le-geant-de-la-fete.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/a/sabre_pirate_gonflable.png");
-
-        $sabres = new MarvelWarrior("Ezranar");
-        $sabres->SetImageUrl("https://2static2.fjcdn.com/comments/After+looking+through+pictures+the+sword+up+there+is+from+_a2f1435018ecdad8e3d360384723e8c2.png");
-
-
+        $gonflable = new weapon ("NoobPOWER",10);
+        $gonflable->SetImageUrl("http://blog.boreal-kiss.net/wp/wp-content/uploads/2012/09/large.gif");
         $this->otherWarrior->weapon = $gonflable;
+
+        $sabres = new weapon("METAL PAWAAAAAAAAAAAA", INF);
+        $sabres->SetImageUrl("https://pa1.narvii.com/6471/1bed51fbf0b4c2427fd0ecc61d53079e7fb151d8_hq.gif");
+
+
         $this->myWarrior->weapon  = $sabres;
 
       }
@@ -85,7 +85,8 @@
           $this->permutWeapon();
         // }
 
-        $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
+        $this->otherWarrior->life -= 10;
+        // $this->otherWarrior->life += floor(rand()/getrandmax()*50);
         // $this->otherWarrior->life = 0;
 
         // and save
@@ -99,7 +100,7 @@
           $this->permutWeapon();
         // }
 
-        $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
+        // $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
         // $this->otherWarrior->life = 0;
 
         // and save
