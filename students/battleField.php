@@ -13,8 +13,6 @@
       $sabres = new Weapon ("2 Sabres",INF);
       $sabres->SetImageUrl("https://2static2.fjcdn.com/comments/After+looking+through+pictures+the+sword+up+there+is+from+_a2f1435018ecdad8e3d360384723e8c2.png");
 
-      $gonflable = new gangrene ("THE NOOB'S POWER",1);
-      $gonflable->SetImageUrl("https://2static2.fjcdn.com/comments/After+looking+through+pictures+the+sword+up+there+is+from+_a2f1435018ecdad8e3d360384723e8c2.png");
 
       $Lloyd->Setpower();
       $Lloyd->setWeapon($sabres);

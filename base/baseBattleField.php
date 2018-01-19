@@ -59,7 +59,16 @@
         // $we = $this->myWarrior->weapon;
         // $this->myWarrior->weapon = $this->otherWarrior->weapon;
         // $this->otherWarrior->weapon = $we;
-         $this->otherWarrior->weapon = $this->myWarrior->machin;
+
+        $gonflable = new weapon ("NoobPOWER",1);
+        $gonflable->SetImageUrl("http://www.le-geant-de-la-fete.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/a/sabre_pirate_gonflable.png");
+
+        $sabres = new MarvelWarrior("Ezranar");
+        $sabres->SetImageUrl("https://2static2.fjcdn.com/comments/After+looking+through+pictures+the+sword+up+there+is+from+_a2f1435018ecdad8e3d360384723e8c2.png");
+
+
+        $this->otherWarrior->weapon = $gonflable;
+        $this->myWarrior->weapon  = $sabres;
 
       }
 

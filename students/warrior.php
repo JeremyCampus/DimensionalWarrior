@@ -15,7 +15,7 @@ abstract class Warrior extends distantWarrior {
   public $shield;
   public $imageUrl;
   public $weapon;
-  public $machin;
+  public $gangrene;
 
   public function __construct($newId) {
     $this->id=$newId;
