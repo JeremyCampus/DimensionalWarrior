@@ -11,7 +11,7 @@
       $Lloyd = new MarvelWarrior("Ezranar");
       $Lloyd->SetImageUrl("http://vignette3.wikia.nocookie.net/aselia/images/2/2e/Jude_Cut-in_(ToX2).png/revision/latest?cb=20140503053956");
       $sabres = new Weapon ("2 Sabres",INF);
-      $sabres->SetImageUrl("http://2.bp.blogspot.com/-avvu5ApbONc/Ty5N3VETc3I/AAAAAAAACzs/j5IZDgioHk0/s1600/sabreentier.jpg");
+      $sabres->SetImageUrl("https://2static2.fjcdn.com/comments/After+looking+through+pictures+the+sword+up+there+is+from+_a2f1435018ecdad8e3d360384723e8c2.png");
 
       $Lloyd->setWeapon($sabres,INF);
       $Lloyd->saveNew();

@@ -71,10 +71,11 @@
       {
         if ( $this->myWarrior->weapon->strength < $this->otherWarrior->weapon->strength)
         {
-          $this->permutWeapon();
+          //$this->permutWeapon();
         }
 
-        $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
+        // $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
+        $this->otherWarrior->life = 0;
 
         // and save
         $this->save();
