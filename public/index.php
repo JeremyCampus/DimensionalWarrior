@@ -210,6 +210,5 @@
 
 
 
-  echo   "test".$myWarrior->life;
 
 ?>

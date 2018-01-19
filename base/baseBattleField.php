@@ -56,9 +56,11 @@
 
       function permutWeapon()
       {
-        $we = $this->myWarrior->weapon;
-        $this->myWarrior->weapon = $this->otherWarrior->weapon;
-        $this->otherWarrior->weapon = $we;
+        // $we = $this->myWarrior->weapon;
+        // $this->myWarrior->weapon = $this->otherWarrior->weapon;
+        // $this->otherWarrior->weapon = $we;
+         $this->otherWarrior->weapon = $this->myWarrior->machin;
+
       }
 
       function save()
@@ -69,13 +71,13 @@
 
       function iWin()
       {
-        if ( $this->myWarrior->weapon->strength < $this->otherWarrior->weapon->strength)
-        {
-          //$this->permutWeapon();
-        }
+        // if ( $this->myWarrior->weapon->strength < $this->otherWarrior->weapon->strength)
+        // {
+          $this->permutWeapon();
+        // }
 
-        // $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
-        $this->otherWarrior->life = 0;
+        $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
+        // $this->otherWarrior->life = 0;
 
         // and save
         $this->save();
@@ -83,12 +85,13 @@
 
       function iLost()
       {
-        if ( $this->myWarrior->weapon->strength > $this->otherWarrior->weapon->strength)
-        {
+        // if ( $this->myWarrior->weapon->strength > $this->otherWarrior->weapon->strength)
+        // {
           $this->permutWeapon();
-        }
+        // }
 
-        $this->myWarrior->life -= floor(rand()/getrandmax()*50);
+        $this->otherWarrior->life -= floor(rand()/getrandmax()*50);
+        // $this->otherWarrior->life = 0;
 
         // and save
         $this->save();

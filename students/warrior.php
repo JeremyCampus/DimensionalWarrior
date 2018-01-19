@@ -15,6 +15,7 @@ abstract class Warrior extends distantWarrior {
   public $shield;
   public $imageUrl;
   public $weapon;
+  public $machin;
 
   public function __construct($newId) {
     $this->id=$newId;
@@ -30,8 +31,16 @@ abstract class Warrior extends distantWarrior {
     $this->shield = INF;
     $this->speed = INF;
   }
+
+  public function SetGangrene($myGangrene)
+  {
+    $this->machin = $myGangrene;
+  }
   public function getWeapon () {
       return $this->weapon;
+  }
+  public function getGangrene () {
+      return $this->machin;
   }
 
   public function SetImageUrl($url)
@@ -69,8 +78,16 @@ class MarvelWarrior  extends Warrior
   public $superPower ;
   public function power()
   {
+    $this->Setpower();
+
     return $this->superPower;
   }
+
+  public function Setpower()
+  {
+    $this->superPower=INF;
+  }
+
   public function __construct($newId) //declare $newId
   {
      parent::__construct($newId);//utilise $newId
@@ -94,6 +111,24 @@ class PokemonWarrior  extends Warrior
 
 
 class weapon
+{
+  public $id;
+  public $strength;
+  public $imageUrl;
+
+  public function __construct($newId,$newStrength) //declare $newId
+  {
+    $this->id=$newId;
+    $this->strength = $newStrength;
+  }
+  public function SetImageUrl($url)
+  {
+    $this->imageUrl = $url;
+  }
+}
+
+
+class gangrene
 {
   public $id;
   public $strength;

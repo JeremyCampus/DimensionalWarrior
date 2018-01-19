@@ -11,6 +11,12 @@
         <img src="{{ $battleField->getMyWarrior()->weapon->imageUrl }}" alt="Pan !" style="width:100px;">
         <div class="meter">
           <span style="width:{{ $battleField->getMyWarrior()->life }}%"></span>
+          </br>
+          LIFE : <?php echo $battleField->getMyWarrior()->life; ?></br>
+          SPEED : <?php echo $battleField->getMyWarrior()->speed; ?></br>
+          SHIELD : <?php echo $battleField->getMyWarrior()->shield; ?></br>
+          SUPERPOWER : <?php echo $battleField->getMyWarrior()->power(); ?></br>
+          WEAPON FORCE : <?php echo $battleField->getMyWarrior()->weapon->strength; ?>
         </div>
       </td>
 
